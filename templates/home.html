@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div>
+		<h3>上傳檔案 Upload File</h3>
+		<p></p>
+		<form id="upload-form" action="{{ url_for('home') }}" method="POST" enctype="multipart/form-data">
+			<input type="file" name="xml" accept="file_extension">
+			<input type="submit" value="下載樂譜 Download score">
+		</form>
+	</div>
+{% endblock content %}
